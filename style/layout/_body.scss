@@ -1,0 +1,38 @@
+// home/hero section styles
+
+#home {
+  -webkit-animation: fade-in 3.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 3.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 2.5s;
+}
+
+.home-text--heading {
+  text-transform: uppercase !important;
+  font-weight: 700;
+  font-size: 3.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include glow-bg;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.6rem;
+  width: 100% !important;
+}
+
+.home-text--subheading {
+  font-weight: 400 !important;
+  margin-top: 1.8rem;
+  font-size: 2rem;
+}
+
+.home-text--info {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  line-height: 1.7;
+}
+
+.home-img--hand {
+  width: 39rem;
+}

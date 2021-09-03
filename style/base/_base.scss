@@ -1,0 +1,11 @@
+/* global styles */
+
+body {
+  font-family: "Oswald", sans-serif !important;
+}
+
+@media (max-width: 768px) {
+  #home {
+    text-align: center;
+  }
+}

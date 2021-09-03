@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lauren Pattison || Frontend Developer && Designer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- loading page -->
+    <div
+      class="
+        loading-page loading-page--visible
+        d-flex
+        align-items-center
+        justify-content-center
+      "
+    >
+      <div class="container">
+        <img
+          src="https://i.gifer.com/4hso.gif"
+          alt=""
+          class="loading-gif img-fluid"
+        />
+        <h2 class="loading-text display-3 text-center">Loading...</h2>
+        <div class="loading-bar w-50">
+          <div class="load loading-fill"></div>
+        </div>
+      </div>
+    </div>
+    <!-- navigation -->
+    <nav class="navbar sticky-top p-4 portfolio-navbar">
+      <div class="container">
+        <div class="navbar-brand d-flex align-items-center">
+          <img class="logo-icon" src="/img/3d-cube.svg" alt="" />
+          <h3 class="logo-txt">LP</h3>
+        </div>
+
+        <div
+          class="
+            right-nav-menu
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div class="right-nav-btn btn d-none d-md-block"><a href="#portfolio" class="portfolio-link">Portfolio</a></div>
+          <div class="hamburger-menu before-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- sliding nav -->
+    <div class="sliding-nav h-100">
+      <div class="container">
+        <div
+          class="
+            sliding-nav-top
+            d-flex
+            justify-content-between
+            align-items-center
+          "
+        >
+          <div class="sliding-nav-logo d-flex align-items-center">
+            <img class="sliding-logo-icon" src="/img/3d-cube-menu.svg" alt="" />
+            <h3 class="sliding-logo-txt">LP</h3>
+          </div>
+          <div class="sliding-nav-close">
+            <span class="close-out d-none d-md-block">Close</span>
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+
+        <div
+          class="
+            sliding-body
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-start
+          "
+        >
+          <div class="list-item">
+            <span class="hover-state">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </span>
+            <a href="#home" class="list-link display-3">Home</a>
+          </div>
+
+          <div class="list-item">
+            <span class="hover-state">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </span>
+            <a href="#skills" class="list-link display-3">Skills</a>
+          </div>
+
+          <div class="list-item">
+            <span class="hover-state">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </span>
+            <a href="#" class="list-link display-3">Resume</a>
+          </div>
+
+          <div class="list-item">
+            <span class="hover-state">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </span>
+            <a href="#contact" class="list-link display-3">Contact</a>
+          </div>
+
+          <div class="list-item">
+            <span class="hover-state">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </span>
+            <a href="#portfolio" class="list-link display-3">Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <section id="home" class="page-section" 
+    data-aos="fade-in" 
+    data-aos-delay="50" 
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    >
+      <div class="container">
+        <div
+          class="
+            home-content
+            row
+            d-flex
+            justify-content-center
+            align-items-center
+            mx-auto
+          "
+        >
+          <div class="home-text-area col col-12 col-lg-6">
+            <h1 class="h1 home-text--heading display-1">Hi, I'm Lauren.</h1>
+            <h3 class="home-text--subheading h3">A Frontend Developer...</h3>
+            <p class="home-text--info lead">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+              aliquam nisi, quae pariatur nesciunt nulla inventore? Voluptatem
+              dolorem possimus vitae quisquam, eius et totam optio laudantium
+              atque impedit repellendus omnis, iure sunt, consequatur obcaecati.
+              Voluptate sed culpa fugit in ad?
+            </p>
+          </div>
+
+          <div class="home-img-area col col-12 col-lg-6">
+            <img
+              src="/img/3000-3000-max.png"
+              alt=""
+              class="img-fluid home-img--hand"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- socials modal -->
+    <section class="socials-modal h-100 w-100">
+      <div class="socials-modal-close d-flex justify-content-end">
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="container">
+        <div class="row socials-container">
+          <div class="socials-text col col-12 col-lg-6">
+            <div class="socials-logo">
+              <img src="/img/3d-cube.svg" alt="" class="l-img img-fluid" />
+              <h3 class="l-text">LP</h3>
+            </div>
+            <div class="socials-info">
+              <h2>Follow me on social media!</h2>
+              <p class="my-info">
+                Want to see what I'm up to? Follow me on my social media pages.
+                I am currently on Linkedin, Behance, Github, and Instagram. Feel
+                free to reach out to me anytime or add me 😎
+              </p>
+              <div class="links">
+                <a href="#" class="linkedin social-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="github social-link"
+                  ><i class="fab fa-github-square"></i
+                ></a>
+                <a href="#" class="behance social-link"
+                  ><i class="fab fa-behance-square"></i
+                ></a>
+                <a href="#" class="instagram social-link"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+              </div>
+              <div class="social-exit">
+                <a href="#" class="no-thanks"
+                  >No thanks, take me back to the site.</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="socials-img col col-12 col-lg-6">
+            <img
+              src="/img/social-media-marketing.png"
+              alt=""
+              class="s-img img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section id="portfolio" class="page-section w-100"
+    data-aos="fade-in" 
+    data-aos-delay="50" 
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    >
+      <div class="container">
+        <div
+          class="
+            portfolio-top
+            row
+            d-flex
+            justify-content-between
+            align-items-center
+          "
+        >
+          <div class="portfolio-top--left col col-lg-6">
+            <h5 class="right-txt"><span class="line"></span>Portfolio</h5>
+          </div>
+          <div class="portfolio-top--right col col-lg-6 d-none d-md-block">
+            <ul
+              class="
+                filter-projects
+                d-flex
+                justify-content-end
+                align-items-center
+              "
+            >
+              <li data-category="all" class="project active-project">All</li>
+              <li data-category="html-css" class="project">HTML/CSS</li>
+              <li data-category="javascript" class="project">Javascript</li>
+              <li data-category="react" class="project">React</li>
+            </ul>
+          </div>
+        </div>
+        <div class="featured-text--top">
+          <h2 class="featured-text">Featured Projects</h2>
+        </div>
+        </div>
+      </div>
+
+       <!-- portfolio projects -->
+       <div class="portfolio-projects container px-4">
+        <div class="row gy-3 gx-3 row-one">
+          <!-- project 1 -->
+          <div class="col col-xl-4 col-12">
+            <div class="featured featured-one all javascript">
+              <div class="project-bg">
+                <div class="project-information">
+                  <h3 class="project-title">Project One</h3>
+                  <p class="project-description">An interactive, redesigned landing page. The tools I used for this project included: Figma, HTML, SASS, Bootstrap, and Vanilla Javascript.</p>
+                  <div class="project-icons">
+                    <button class="live-demo mb-2"><a href="https://github.com/lpattis1/restaurantsite-revised" class="project-link">Live Preview</a></button>
+                    <button class="github-code mb-2"><a href="https://friendly-lewin-6feb7e.netlify.app/" class="project-link">Github</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- project 2 -->
+          <div class="col col-xl-4 col-12">
+            <div class="featured featured-two all html-css">
+              <div class="project-bg">
+                <div class="project-information">
+                  <h3 class="project-title">Project Two</h3>
+                  <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit incidunt omnis esse ex blanditiis et necessitatibus perferendis aut voluptatem, impedit labore possimus officiis.</p>
+                  <div class="project-icons">
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- project 3 -->
+          <div class="col col-xl-4 col-12">
+            <div class="featured featured-three all javascript">
+             <div class="project-bg">
+              <div class="project-information">
+                <h3 class="project-title">Project Three</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit incidunt omnis esse ex blanditiis et necessitatibus perferendis aut voluptatem, impedit labore possimus officiis.</p>
+                <div class="project-icons">
+                  <button class="live-demo">Live Demo</button>
+                  <button class="github-code">Github</button>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+
+          <!-- project 4 -->
+          <div class="col col-xl-4 col-12">
+            <div class="featured featured-four all react">
+             <div class="project-bg">
+              <div class="project-information">
+                <h3 class="project-title">Project Four</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit incidunt omnis esse ex blanditiis et necessitatibus perferendis aut voluptatem, impedit labore possimus officiis.</p>
+                <div class="project-icons">
+                  <button class="live-demo">Live Demo</button>
+                  <button class="github-code">Github</button>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+
+          <!-- project 5 -->
+          <div class="col col-xl-4 col-12">
+            <div class="featured featured-five all javascript">
+              <div class="project-bg">
+                <div class="project-information">
+                  <h3 class="project-title">Project Five</h3>
+                  <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit incidunt omnis esse ex blanditiis et necessitatibus perferendis aut voluptatem, impedit labore possimus officiis.</p>
+                  <div class="project-icons">
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- project 6 -->
+           <div class="col col-xl-4 col-12">
+            <div class="featured featured-six all  react">
+              <div class="project-bg ">
+                <div class="project-information">
+                  <h3 class="project-title">Project Six</h3>
+                  <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit incidunt omnis esse ex blanditiis et necessitatibus perferendis aut voluptatem, impedit labore possimus officiis.</p>
+                  <div class="project-icons">
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    
+  
+    <section id="skills" class="page-section" 
+    data-aos="fade-in" 
+    data-aos-delay="50" 
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+      fsdfsf
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minima repellat iste iusto ipsa temporibus veritatis atque in odit quaerat aliquid, commodi, nihil ea exercitationem officiis accusantium! At nesciunt praesentium iste dolorum qui in nulla unde, provident, modi, hic est cumque delectus sequi vero itaque assumenda eligendi accusamus fugiat vel totam quo eum possimus! Nam debitis nemo aperiam recusandae suscipit.</p>
+    </section>
+    
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      const scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javascript/main.js"></script>
+    <script src="/javascript/navbar.js"></script>
+    <script src="/javascript/popup.js"></script>
+    <script src="/javascript/loading.js"></script>
+   
+  </body>
+</html>
